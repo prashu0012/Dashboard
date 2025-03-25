@@ -8,7 +8,7 @@ export default function Home() {
 
     const fetchData = async () => {
         try {
-            const response = await axios.get("http://localhost:3000");
+            const response = await axios.get("https://dashboard-i9ge.onrender.com");
             if (response.data.success) {
                 setCollegeData(response.data.data);
             }

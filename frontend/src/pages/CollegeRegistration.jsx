@@ -11,7 +11,7 @@ export default function CollegeRegistration() {
         console.log("Form Data:", formValues);
 
         try {
-            const response = await axios.post("http://localhost:3000/register", formValues, {
+            const response = await axios.post("https://dashboard-i9ge.onrender.com/register", formValues, {
                 headers: { "Content-Type": "application/json" },
             });
             // console.log(response.data.success);
